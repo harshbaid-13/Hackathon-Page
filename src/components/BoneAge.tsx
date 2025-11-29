@@ -20,6 +20,18 @@ const BoneAgeDataProvider = () => {
 
   const goBack = () => {
     navigate("/");
+    // Scroll to challenge problems section after navigation with 10px offset
+    setTimeout(() => {
+      const challengeSection = document.getElementById("challenge-problems");
+      if (challengeSection) {
+        const elementPosition = challengeSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - 100;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 100);
   };
 
   return (
@@ -107,9 +119,9 @@ const BoneAgeDataProvider = () => {
                 <h3 className="text-lg font-bold text-slate-900">
                   Dataset Specification
                 </h3>
-                <span className="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-100">
+                {/* <span className="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-100">
                   Ready for Use
-                </span>
+                </span> */}
               </div>
               <div className="p-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-12">
@@ -169,7 +181,7 @@ const BoneAgeDataProvider = () => {
                           </th>
                           <th
                             scope="col"
-                            className="px-6 py-3 text -left text-xs font-semibold text-slate-500 uppercase tracking-wider"
+                            className="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider"
                           >
                             Description/Values
                           </th>
@@ -183,7 +195,7 @@ const BoneAgeDataProvider = () => {
                         <MetadataRow field="Gender" desc="Male / Female" />
                         <MetadataRow
                           field="Age (Target Variable)"
-                          desc="0 - 18 years (Anonymized)"
+                          desc="0 - 18 years"
                         />
                       </tbody>
                     </table>

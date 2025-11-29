@@ -94,7 +94,7 @@ export function HackathonSection() {
           </div>
         </div>
 
-        <div className="mb-12">
+        <div id="challenge-problems" className="mb-12">
           <h3 className="text-3xl mb-8 text-center">Challenge Problems</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <Card
@@ -109,7 +109,10 @@ export function HackathonSection() {
               </p>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
+            <Card
+              className="p-6 hover:shadow-lg transition-shadow cursor-pointer"
+              onClick={() => navigate("/cataract")}
+            >
               <div className="text-4xl mb-4">👁️</div>
               <h4 className="text-xl mb-3">Cataract Detection</h4>
               <p className="text-gray-600">
@@ -118,7 +121,10 @@ export function HackathonSection() {
               </p>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
+            <Card
+              className="p-6 hover:shadow-lg transition-shadow cursor-pointer"
+              onClick={() => navigate("/diabetic-retinopathy")}
+            >
               <div className="text-4xl mb-4">🔬</div>
               <h4 className="text-xl mb-3">Diabetic Retinopathy</h4>
               <p className="text-gray-600">
