@@ -9,6 +9,8 @@ import { HackathonSection } from "./components/HackathonSection";
 import { CTASection } from "./components/CTASection";
 import { Footer } from "./components/Footer";
 import BoneAgeDataProvider from "./components/BoneAge";
+import Cataract from "./components/Cataract";
+import DiabeticRetinopathy from "./components/DiabeticRetinopathy";
 import ScrollToTop from "./components/ScrollToTop";
 
 function HomePage() {
@@ -33,6 +35,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/bone-age" element={<BoneAgeDataProvider />} />
+        <Route path="/cataract" element={<Cataract />} />
+        <Route path="/diabetic-retinopathy" element={<DiabeticRetinopathy />} />
       </Routes>
     </>
   );
