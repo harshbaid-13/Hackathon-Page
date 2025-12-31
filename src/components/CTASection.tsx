@@ -1,9 +1,9 @@
 import { Button } from "./ui/button";
-import { ArrowRight, Mail, Users } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 export function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-600 via-cyan-600 to-blue-700 relative overflow-hidden">
+    <section className="py-20 bg-linear-to-br from-blue-600 via-cyan-600 to-blue-700 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div

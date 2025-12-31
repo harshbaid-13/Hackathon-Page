@@ -7,7 +7,7 @@ export function HackathonSection() {
   const navigate = useNavigate();
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-linear-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-cyan-100 rounded-full mb-4">
@@ -34,7 +34,7 @@ export function HackathonSection() {
 
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
                   <Users className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
@@ -46,7 +46,7 @@ export function HackathonSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center shrink-0">
                   <Calendar className="w-5 h-5 text-green-600" />
                 </div>
                 <div>
@@ -59,7 +59,7 @@ export function HackathonSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                   <Trophy className="w-5 h-5 text-purple-600" />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ export function HackathonSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center shrink-0">
                   <Award className="w-5 h-5 text-amber-600" />
                 </div>
                 <div>
@@ -135,9 +135,9 @@ export function HackathonSection() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-gray-900 to-blue-900 text-white rounded-2xl p-8 md:p-12">
+        <div className="bg-linear-to-br from-gray-900 to-blue-900 text-white rounded-2xl p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <div className="w-20 h-20 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center">
                 <FileCheck className="w-10 h-10 text-cyan-400" />
               </div>

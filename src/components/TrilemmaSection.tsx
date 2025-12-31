@@ -1,4 +1,3 @@
-import React from "react";
 import { AlertTriangle } from "lucide-react";
 
 export function TrilemmaSection() {
@@ -58,7 +57,7 @@ export function TrilemmaSection() {
 
             {/* Top Point - Reliability */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4">
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
+              <div className="bg-linear-to-br from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
                 <div className="text-3xl mb-2">🎯</div>
                 <h3 className="text-xl mb-2">Reliability</h3>
                 <p className="text-sm text-blue-100">
@@ -70,7 +69,7 @@ export function TrilemmaSection() {
 
             {/* Bottom Left Point - Openness */}
             <div className="absolute bottom-0 left-0 transform -translate-x-8">
-              <div className="bg-gradient-to-br from-green-500 to-green-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
+              <div className="bg-linear-to-br from-green-500 to-green-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
                 <div className="text-3xl mb-2">🔓</div>
                 <h3 className="text-xl mb-2">Openness</h3>
                 <p className="text-sm text-green-100">
@@ -82,7 +81,7 @@ export function TrilemmaSection() {
 
             {/* Bottom Right Point - Transparency */}
             <div className="absolute bottom-0 right-0 transform translate-x-8">
-              <div className="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
+              <div className="bg-linear-to-br from-purple-500 to-purple-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
                 <div className="text-3xl mb-2">📊</div>
                 <h3 className="text-xl mb-2">Transparency</h3>
                 <p className="text-sm text-purple-100">
@@ -95,7 +94,7 @@ export function TrilemmaSection() {
 
           {/* Mobile Layout - Stacked cards */}
           <div className="md:hidden space-y-6 mb-12">
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg text-center">
+            <div className="bg-linear-to-br from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg text-center">
               <div className="text-3xl mb-2">🎯</div>
               <h3 className="text-xl mb-2">Reliability</h3>
               <p className="text-sm text-blue-100">
@@ -104,7 +103,7 @@ export function TrilemmaSection() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-green-500 to-green-600 text-white p-6 rounded-2xl shadow-lg text-center">
+            <div className="bg-linear-to-br from-green-500 to-green-600 text-white p-6 rounded-2xl shadow-lg text-center">
               <div className="text-3xl mb-2">🔓</div>
               <h3 className="text-xl mb-2">Openness</h3>
               <p className="text-sm text-green-100">
@@ -113,7 +112,7 @@ export function TrilemmaSection() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-6 rounded-2xl shadow-lg text-center">
+            <div className="bg-linear-to-br from-purple-500 to-purple-600 text-white p-6 rounded-2xl shadow-lg text-center">
               <div className="text-3xl mb-2">📊</div>
               <h3 className="text-xl mb-2">Transparency</h3>
               <p className="text-sm text-purple-100">
@@ -123,7 +122,7 @@ export function TrilemmaSection() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-6 md:p-8 rounded-2xl">
+          <div className="bg-linear-to-br from-gray-900 to-gray-800 text-white p-6 md:p-8 rounded-2xl">
             <p className="text-base md:text-lg leading-relaxed text-center">
               <span className="text-amber-400">Given the paucity of data</span>,
               validation of AI models for healthcare can presently satisfy{" "}
