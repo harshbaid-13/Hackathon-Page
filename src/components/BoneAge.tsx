@@ -1,16 +1,12 @@
 import React from "react";
 import {
   ArrowLeft,
-  Download,
   FileImage,
   Users,
   Database,
   Activity,
   ScanLine,
-  Tag,
-  Info,
   CheckCircle2,
-  HelpCircle,
   ShieldCheck,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -450,30 +446,30 @@ const MetadataRow = ({ field, desc }: MetadataRowProps) => (
   </tr>
 );
 
-interface SplitItemProps {
-  title: string;
-  badge: string;
-  badgeColor: string;
-  desc: string;
-}
+// interface SplitItemProps {
+//   title: string;
+//   badge: string;
+//   badgeColor: string;
+//   desc: string;
+// }
 
-const SplitItem = ({ title, badge, badgeColor, desc }: SplitItemProps) => (
-  <div className="relative flex items-start bg-white p-4 rounded-lg border border-slate-200 shadow-sm z-10 mb-4">
-    <div className="shrink-0 mt-1">
-      <div className="h-3 w-3 rounded-full bg-slate-400 ring-4 ring-white"></div>
-    </div>
-    <div className="ml-4 w-full">
-      <div className="flex justify-between items-start flex-wrap gap-2">
-        <h4 className="text-sm font-bold text-slate-900">{title}</h4>
-        <span
-          className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wide ${badgeColor}`}
-        >
-          {badge}
-        </span>
-      </div>
-      <p className="mt-1 text-xs text-slate-500 leading-relaxed">{desc}</p>
-    </div>
-  </div>
-);
+// const SplitItem = ({ title, badge, badgeColor, desc }: SplitItemProps) => (
+//   <div className="relative flex items-start bg-white p-4 rounded-lg border border-slate-200 shadow-sm z-10 mb-4">
+//     <div className="shrink-0 mt-1">
+//       <div className="h-3 w-3 rounded-full bg-slate-400 ring-4 ring-white"></div>
+//     </div>
+//     <div className="ml-4 w-full">
+//       <div className="flex justify-between items-start flex-wrap gap-2">
+//         <h4 className="text-sm font-bold text-slate-900">{title}</h4>
+//         <span
+//           className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wide ${badgeColor}`}
+//         >
+//           {badge}
+//         </span>
+//       </div>
+//       <p className="mt-1 text-xs text-slate-500 leading-relaxed">{desc}</p>
+//     </div>
+//   </div>
+// );
 
 export default BoneAgeDataProvider;

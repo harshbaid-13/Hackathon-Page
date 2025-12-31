@@ -12,7 +12,7 @@ export function HeroSection() {
           alt="Medical AI Technology"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/85 to-cyan-900/90"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-blue-900/90 via-blue-800/85 to-cyan-900/90"></div>
       </div>
 
       {/* Content */}

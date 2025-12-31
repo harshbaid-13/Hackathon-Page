@@ -1,5 +1,4 @@
-import React from "react";
-import { ArrowLeft, Activity, Clock } from "lucide-react";
+import { ArrowLeft, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Cataract = () => {

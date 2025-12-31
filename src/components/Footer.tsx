@@ -4,13 +4,14 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <h3 className="text-white text-xl mb-4">AI Federated Intelligence Framework</h3>
+            <h3 className="text-white text-xl mb-4">
+              AI Federated Intelligence Framework
+            </h3>
             <p className="text-gray-400 mb-4">
-              Building trustworthy AI for healthcare through open benchmarking, privacy-preserving validation, and collaborative innovation.
+              Building trustworthy AI for healthcare through open benchmarking,
+              privacy-preserving validation, and collaborative innovation.
             </p>
-            <p className="text-gray-400">
-              CDIS, IIT Kanpur
-            </p>
+            <p className="text-gray-400">CDIS, IIT Kanpur</p>
           </div>
 
           <div>
@@ -26,10 +27,26 @@ export function Footer() {
           <div>
             <h4 className="text-white mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Register</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Platform</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Register
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Platform
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -39,9 +56,15 @@ export function Footer() {
             © 2024 IIT Kanpur. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Data Usage Agreement</a>
+            <a href="#" className="hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Terms of Service
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Data Usage Agreement
+            </a>
           </div>
         </div>
       </div>
