@@ -20,35 +20,36 @@ export function TrilemmaSection() {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Triangle Container - Hidden on mobile, shown on md+ */}
-          <div className="hidden md:block relative aspect-square max-w-2xl mx-auto mb-12">
+          <div className="hidden md:block relative aspect-[16/7] max-w-3xl mx-auto mb-20 mt-12">
             {/* Connecting Lines */}
             <svg
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-x-4 top-0 bottom-0 w-[calc(100%-2rem)] h-full"
               viewBox="0 0 100 100"
+              preserveAspectRatio="none"
             >
               <line
                 x1="50"
-                y1="10"
+                y1="20"
                 x2="15"
-                y2="85"
+                y2="80"
                 stroke="#e5e7eb"
                 strokeWidth="0.5"
                 strokeDasharray="2,2"
               />
               <line
                 x1="50"
-                y1="10"
+                y1="20"
                 x2="85"
-                y2="85"
+                y2="80"
                 stroke="#e5e7eb"
                 strokeWidth="0.5"
                 strokeDasharray="2,2"
               />
               <line
                 x1="15"
-                y1="85"
+                y1="80"
                 x2="85"
-                y2="85"
+                y2="80"
                 stroke="#e5e7eb"
                 strokeWidth="0.5"
                 strokeDasharray="2,2"
@@ -56,37 +57,37 @@ export function TrilemmaSection() {
             </svg>
 
             {/* Top Point - Reliability */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4">
-              <div className="bg-linear-to-br from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
-                <div className="text-3xl mb-2">🎯</div>
-                <h3 className="text-xl mb-2">Reliability</h3>
-                <p className="text-sm text-blue-100">
-                  Centralized testing enhances reliability but restricts
-                  openness and applicability
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 z-10 w-64">
+              <div className="bg-linear-to-br from-blue-500 to-blue-600 text-white p-5 rounded-2xl shadow-lg text-center border border-white/20">
+                <div className="text-2xl mb-1">🎯</div>
+                <h3 className="text-lg font-bold mb-1">Reliability</h3>
+                <p className="text-xs text-blue-100 uppercase tracking-wider mb-2 font-semibold">Centralized Testing</p>
+                <p className="text-sm text-blue-50">
+                  Restricts openness and applicability
                 </p>
               </div>
             </div>
 
             {/* Bottom Left Point - Openness */}
-            <div className="absolute bottom-0 left-0 transform -translate-x-8">
-              <div className="bg-linear-to-br from-green-500 to-green-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
-                <div className="text-3xl mb-2">🔓</div>
-                <h3 className="text-xl mb-2">Openness</h3>
-                <p className="text-sm text-green-100">
-                  Independent testing promotes openness but risks overfitting
-                  and statistical misuse
+            <div className="absolute bottom-0 left-0 transform translate-y-4 z-10 w-64">
+              <div className="bg-linear-to-br from-green-500 to-green-600 text-white p-5 rounded-2xl shadow-lg text-center border border-white/20">
+                <div className="text-2xl mb-1">🔓</div>
+                <h3 className="text-lg font-bold mb-1">Openness</h3>
+                <p className="text-xs text-green-100 uppercase tracking-wider mb-2 font-semibold">Independent Testing</p>
+                <p className="text-sm text-green-50">
+                  Risks overfitting and statistical misuse
                 </p>
               </div>
             </div>
 
             {/* Bottom Right Point - Transparency */}
-            <div className="absolute bottom-0 right-0 transform translate-x-8">
-              <div className="bg-linear-to-br from-purple-500 to-purple-600 text-white p-6 rounded-2xl shadow-lg max-w-xs text-center">
-                <div className="text-3xl mb-2">📊</div>
-                <h3 className="text-xl mb-2">Transparency</h3>
-                <p className="text-sm text-purple-100">
-                  Benchmark-driven testing ensures transparency but remains
-                  restricted to pre-defined datasets
+            <div className="absolute bottom-0 right-0 transform translate-y-4 z-10 w-64">
+              <div className="bg-linear-to-br from-purple-500 to-purple-600 text-white p-5 rounded-2xl shadow-lg text-center border border-white/20">
+                <div className="text-2xl mb-1">📊</div>
+                <h3 className="text-xl mb-2 font-bold">Transparency</h3>
+                <p className="text-xs text-purple-100 uppercase tracking-wider mb-2 font-semibold">Benchmark-driven</p>
+                <p className="text-sm text-purple-50">
+                  Restricted to pre-defined datasets
                 </p>
               </div>
             </div>
