@@ -1,3 +1,4 @@
+import { FAQDialog } from "./FAQDialog";
 import { Button } from "./ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
@@ -44,6 +45,7 @@ export function CTASection() {
             Register Your Team
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
+          <FAQDialog className="cursor-pointer border-2 border-white bg-white hover:bg-blue-50 text-blue-600 hover:text-blue-600 px-8 py-6 text-lg" />
           <Button
             size="lg"
             variant="outline"
@@ -52,6 +54,7 @@ export function CTASection() {
             <Mail className="mr-2 w-5 h-5" />
             Contact Us
           </Button>
+        
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 text-white">
