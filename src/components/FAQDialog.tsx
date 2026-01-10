@@ -169,6 +169,20 @@ export function FAQDialog({
               discussed after the conclusion of the hackathon.
             </p>
           </div>
+
+          <div className="space-y-2">
+            <h4 className="text-[16px] font-medium text-gray-900 flex gap-2">
+              <span className="text-blue-600"></span> For any more questions,
+              mail us at:{" "}
+              <a
+                href="mailto:hackathon.support@nha.gov.in"
+                target="_blank"
+                className="text-blue-600 hover:text-blue-700 underline"
+              >
+                hackathon.support@nha.gov.in
+              </a>
+            </h4>
+          </div>
         </div>
       </DialogContent>
     </Dialog>
