@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { HeroSection } from "./components/HeroSection";
+import { WebinarSection } from "./components/WebinarSection";
 import { AboutSection } from "./components/AboutSection";
 import { TrilemmaSection } from "./components/TrilemmaSection";
 import { SolutionSection } from "./components/SolutionSection";
@@ -19,6 +20,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <HeroSection />
+      <WebinarSection />
       <HackathonSection />
       <AboutSection />
       <TrilemmaSection />
