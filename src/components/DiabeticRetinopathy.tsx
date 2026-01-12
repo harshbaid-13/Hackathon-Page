@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactElement } from "react";
 import {
   ArrowLeft,
   Download,
@@ -56,14 +56,29 @@ const DiabeticRetinopathy = () => {
               </div>
             </div>
             <div className="flex gap-3">
-              <button className="inline-flex items-center px-4 py-2 border border-slate-300 shadow-sm text-sm font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 focus:outline-none transition-colors">
-                <Info size={16} className="mr-2" />
-                Documentation
+              <button
+                disabled={true}
+                className="inline-flex items-center px-4 py-2 border border-slate-300 shadow-sm text-sm font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-not-allowed"
+              >
+                <Download size={16} className="mr-2" />
+                Download Training Dataset (Not Ready)
               </button>
-              <button className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+              <button
+                disabled={true}
+                className="inline-flex items-center px-4 py-2 border border-slate-300 shadow-sm text-sm font-medium rounded-lg text-slate-500 bg-slate-100 focus:outline-none transition-colors disabled:opacity-60 disabled:cursor-not-allowed cursor-not-allowed"
+                title="Dataset not ready yet. Please wait."
+              >
+                <Download size={16} className="mr-2" />
+                Download Sample Testing Dataset (Not Ready)
+              </button>
+              {/* <a
+                href="/dhs/hackathon/datasets/diabetic-retinopathy-sample.csv"
+                download="diabetic-retinopathy-sample.csv"
+                className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
+              >
                 <Download size={16} className="mr-2" />
                 Download Dataset
-              </button>
+              </a> */}
             </div>
           </div>
         </div>
@@ -84,29 +99,64 @@ const DiabeticRetinopathy = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 max-w-4xl leading-tight">
-              Identify diabetic retinopathy from fundus images to prevent vision
-              loss through early detection.
+              Screen and detect Diabetic Retinopathy, and classify DR into
+              severity levels from fundus images.
             </h2>
             <p className="text-indigo-100 text-lg max-w-3xl leading-relaxed opacity-90">
               Diabetic Retinopathy is a microvascular complication of diabetes
               that leads to progressive damage of the retina. The disease is
               often asymptomatic in early stages, making screening critical for
-              timely intervention.
+              timely intervention. However, manual grading of DR from fundus
+              images is time-consuming, requires skilled ophthalmologists, and
+              is prone to variability.
             </p>
           </div>
         </div>
 
-        {/* Key Metrics Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        {/* Dataset Not Ready Message */}
+        <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-8 md:p-12 mb-8">
+          <div className="flex items-start gap-4">
+            <div className="shrink-0">
+              <svg
+                className="w-8 h-8 text-amber-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"
+                />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold text-amber-900 mb-3">
+                Dataset Not Ready
+              </h3>
+              <p className="text-lg text-amber-800 mb-2">
+                The Diabetic Retinopathy dataset is currently being prepared and
+                is not yet available for download.
+              </p>
+              <p className="text-base text-amber-700">
+                Please check back later. We apologize for any inconvenience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Key Metrics Grid - COMMENTED OUT - Dataset not ready */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <StatCard
             icon={<FileImage className="text-blue-600" />}
             label="Total Images"
-            value="400"
+            value="286"
           />
           <StatCard
             icon={<ScanLine className="text-emerald-600" />}
             label="Image Size"
-            value="Max 6MB"
+            value="6MB avg"
           />
           <StatCard
             icon={<Users className="text-purple-600" />}
@@ -116,14 +166,13 @@ const DiabeticRetinopathy = () => {
           <StatCard
             icon={<Database className="text-orange-600" />}
             label="Source"
-            value="Clinical Study"
+            value="Public Study"
           />
-        </div>
+        </div> */}
 
+        {/* Dataset details section - COMMENTED OUT - Dataset not ready
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left Column: Detailed Requirements */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Dataset Contents */}
             <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-slate-100 flex items-center justify-between">
                 <h3 className="text-lg font-bold text-slate-900">
@@ -132,9 +181,12 @@ const DiabeticRetinopathy = () => {
               </div>
               <div className="p-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-12">
-                  <SpecItem label="Total Volume" value="400 Images" />
+                  <SpecItem
+                    label="Total Volume"
+                    value="286 Images (143 M & 143 F)"
+                  />
                   <SpecItem label="File Format" value="*.png" />
-                  <SpecItem label="Image Size" value="Max 6MB" />
+                  <SpecItem label="Image Size" value="6MB average" />
                   <SpecItem
                     label="Color Space"
                     value="Orange, Yellow, Red, Pink, White"
@@ -144,7 +196,6 @@ const DiabeticRetinopathy = () => {
               </div>
             </section>
 
-            {/* Metadata & Labels */}
             <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-slate-100">
                 <h3 className="text-lg font-bold text-slate-900">
@@ -152,7 +203,6 @@ const DiabeticRetinopathy = () => {
                 </h3>
               </div>
               <div className="p-6 space-y-8">
-                {/* DR Severity Labels */}
                 <div className="bg-indigo-50/50 border border-indigo-100 rounded-xl p-6">
                   <div className="flex items-start gap-4">
                     <div className="p-3 bg-indigo-100 rounded-lg">
@@ -190,7 +240,6 @@ const DiabeticRetinopathy = () => {
                   </div>
                 </div>
 
-                {/* Metadata Table */}
                 <div>
                   <div className="overflow-hidden border border-slate-200 rounded-lg">
                     <table className="min-w-full divide-y divide-slate-200">
@@ -239,11 +288,16 @@ const DiabeticRetinopathy = () => {
               </div>
             </section>
           </div>
+        </div>
+        */}
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2"></div>
 
           {/* Right Column: Split & Info */}
           <div className="space-y-8">
             {/* Privacy & Compliance */}
-            <section className="bg-[#1e293b] rounded-xl shadow-lg overflow-hidden text-white">
+            {/* <section className="bg-[#1e293b] rounded-xl shadow-lg overflow-hidden text-white">
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-white/10 rounded-lg">
@@ -279,13 +333,13 @@ const DiabeticRetinopathy = () => {
                   </li>
                 </ul>
               </div>
-            </section>
+            </section> */}
 
             {/* Data Split Strategy */}
-            <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            {/* <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-slate-100">
                 <h3 className="text-lg font-bold text-slate-900">
-                  Data Split Strategy
+                  Train/Test Split
                 </h3>
               </div>
               <div className="p-6">
@@ -294,10 +348,36 @@ const DiabeticRetinopathy = () => {
                   is provided, having fully labeled images.
                 </p>
               </div>
-            </section>
+            </section> */}
+
+            {/* Source Information */}
+            {/* <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+              <div className="px-6 py-5 border-b border-slate-100">
+                <h3 className="text-lg font-bold text-slate-900">
+                  Source of Dataset
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-3 text-sm text-slate-600">
+                  <div>
+                    <span className="font-semibold">Study Type:</span> Public
+                    Funded Algorithm development study
+                  </div>
+                  <div>
+                    <span className="font-semibold">Settings:</span> Hospital
+                  </div>
+                  <div>
+                    <span className="font-semibold">
+                      Clinical Investigators:
+                    </span>{" "}
+                    Will be provided as requested
+                  </div>
+                </div>
+              </div>
+            </section> */}
 
             {/* Data Preprocessing & Utilities */}
-            <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            {/* <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
               <div className="px-6 py-5 border-b border-slate-100">
                 <h3 className="text-lg font-bold text-slate-900">
                   Data Preprocessing & Utilities
@@ -344,10 +424,10 @@ const DiabeticRetinopathy = () => {
                   </a>
                 </div>
               </div>
-            </section>
+            </section> */}
 
             {/* Important: Bring Your Own Dataset */}
-            <section className="bg-linear-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-200 p-6 sticky top-6">
+            {/* <section className="bg-linear-to-r from-red-50 to-orange-50 rounded-xl border-2 border-red-200 p-6 sticky top-6">
               <div className="flex items-start gap-4">
                 <div>
                   <h3 className="text-lg font-bold text-red-900 mb-2">
@@ -375,7 +455,7 @@ const DiabeticRetinopathy = () => {
                   </p>
                 </div>
               </div>
-            </section>
+            </section> */}
           </div>
         </div>
       </main>
@@ -386,7 +466,7 @@ const DiabeticRetinopathy = () => {
 // --- Helper Components ---
 
 interface StatCardProps {
-  icon: React.ReactElement;
+  icon: ReactElement;
   label: string;
   value: string;
 }
