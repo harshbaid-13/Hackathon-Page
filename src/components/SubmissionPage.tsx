@@ -114,7 +114,7 @@ export default function SubmissionPage() {
       formData.append("usedLibrary", usedLibrary === "Others" ? usedLibraryOther : usedLibrary);
       formData.append("file", file);
 
-      const response = await fetch("http://3.110.207.163:3000/upload", {
+      const response = await fetch("/dhs-hackathon/upload", {
         method: "POST",
         body: formData,
       });
