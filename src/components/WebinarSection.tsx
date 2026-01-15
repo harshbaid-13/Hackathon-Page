@@ -6,9 +6,9 @@ export function WebinarSection() {
     <section className="py-16 bg-blue-50/50" id="webinars">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-12">
-          <div className="inline-block px-4 py-2 bg-green-100 rounded-full mb-4">
+          {/* <div className="inline-block px-4 py-2 bg-green-100 rounded-full mb-4">
             <p className="text-green-700 font-medium text-sm">Completed</p>
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Orientation Webinars
           </h2>
