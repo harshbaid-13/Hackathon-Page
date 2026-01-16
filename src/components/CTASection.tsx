@@ -1,8 +1,25 @@
 import { FAQDialog } from "./FAQDialog";
 import { Button } from "./ui/button";
 import { ArrowRight, Mail } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export function CTASection() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSubmission = () => {
+    // If we're on the home page, scroll directly to the section
+    if (location.pathname === "/") {
+      const element = document.getElementById("submission-section");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // If we're on a different page, navigate to home with hash
+      navigate("/#submission-section");
+    }
+  };
+
   return (
     <section
       id="cta"
@@ -38,14 +55,9 @@ export function CTASection() {
           <Button
             size="lg"
             className="cursor-pointer bg-white text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg group"
-            onClick={() =>
-              window.open(
-                "https://docs.google.com/forms/d/e/1FAIpQLScM9IN0b867oAN0xke3nLya7IJJS5iqc7YlMkUHJzDzOfasFQ/viewform",
-                "_blank"
-              )
-            }
+            onClick={scrollToSubmission}
           >
-            Register Your Team
+            Make Your Submission
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           <FAQDialog className="-translate-y-px cursor-pointer bg-white hover:bg-blue-50 text-blue-600 hover:text-blue-600 px-8 py-6 text-lg" />

@@ -83,7 +83,7 @@ export function WebinarSection() {
             </Button>
             <Button
               variant="outline"
-              className="gap-2 cursor-pointer border-cyan-200 text-cyan-700 hover:bg-cyan-50"
+              className="gap-2 cursor-pointer border-cyan-700 text-cyan-700 hover:bg-cyan-50"
               size="lg"
               asChild
             >

@@ -23,11 +23,11 @@ function HomePage() {
       <HeroSection />
       <WebinarSection />
       <HackathonSection />
+      <SubmissionSection />
       <AboutSection />
       <TrilemmaSection />
       <SolutionSection />
       <DPGsSection />
-      <SubmissionSection />
       <CTASection />
       <Footer />
     </div>
@@ -45,7 +45,10 @@ export default function App() {
         <Route path="/diabetic-retinopathy" element={<DiabeticRetinopathy />} />
         <Route path="/submission" element={<SubmissionPage />} />
         <Route path="/dataset-upload" element={<DatasetUploadPage />} />
-        <Route path="/submission-guidelines" element={<SubmissionGuidelinesPage />} />
+        <Route
+          path="/submission-guidelines"
+          element={<SubmissionGuidelinesPage />}
+        />
       </Routes>
     </>
   );

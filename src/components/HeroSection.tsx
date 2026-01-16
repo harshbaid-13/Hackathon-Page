@@ -2,8 +2,10 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Button } from "./ui/button";
 import { Calendar, MapPin } from "lucide-react";
 import { FAQDialog } from "./FAQDialog";
+import { useNavigate } from "react-router-dom";
 
 export function HeroSection() {
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -57,27 +59,16 @@ export function HeroSection() {
           <Button
             size="lg"
             className="cursor-pointer bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-6 text-lg"
-            onClick={() =>
-              window.open(
-                "https://docs.google.com/forms/d/e/1FAIpQLScM9IN0b867oAN0xke3nLya7IJJS5iqc7YlMkUHJzDzOfasFQ/viewform",
-                "_blank"
-              )
-            }
+            onClick={() => navigate("/submission")}
           >
-            Register Now
+            Submit Model
           </Button>
           <Button
             size="lg"
-            variant="outline"
-            className="cursor-pointer bg-gray-100 hover:bg-white text-blue-900 hover:text-blue-900 px-6 py-6 text-lg"
-            onClick={() => {
-              const aboutSection = document.getElementById("about");
-              if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
+            className="cursor-pointer bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-6 text-lg"
+            onClick={() => navigate("/dataset-upload")}
           >
-            Learn More
+            Share Dataset
           </Button>
           <FAQDialog
             className="cursor-pointer bg-gray-100 hover:bg-white text-blue-900 hover:text-blue-900 px-6 py-6 text-lg"
