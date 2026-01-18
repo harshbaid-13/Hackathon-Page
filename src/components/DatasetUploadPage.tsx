@@ -52,8 +52,8 @@ export default function DatasetUploadPage() {
     }
 
     const fileName = selectedFile.name.toLowerCase();
-    if (!fileName.endsWith(".csv")) {
-      setFileError("Please upload a CSV file only");
+    if (!fileName.endsWith(".parquet")) {
+      setFileError("Please upload a Parquet file only");
       setFile(null);
       return;
     }
@@ -114,7 +114,7 @@ export default function DatasetUploadPage() {
 
     if (!file) {
       setSubmitStatus("error");
-      setSubmitMessage("Please upload a CSV file");
+      setSubmitMessage("Please upload a Parquet file");
       return;
     }
 
@@ -312,7 +312,7 @@ export default function DatasetUploadPage() {
             <div className="space-y-2">
               <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
                 <FileSpreadsheet className="w-4 h-4 text-emerald-600" />
-                Upload CSV File
+                Upload Parquet File
                 <span className="text-emerald-600">*</span>
               </label>
               <div
@@ -331,7 +331,7 @@ export default function DatasetUploadPage() {
                 <input
                   ref={fileInputRef}
                   type="file"
-                  accept=".csv"
+                  accept=".parquet"
                   onChange={handleFileChange}
                   disabled={isSubmitting}
                   className="hidden"
@@ -358,7 +358,7 @@ export default function DatasetUploadPage() {
                       </div>
                       <div>
                         <p className="text-slate-700 font-medium">
-                          Drop your CSV file here
+                          Drop your Parquet file here
                         </p>
                         <p className="text-sm text-slate-500 mt-1">
                           or click to browse from your computer
