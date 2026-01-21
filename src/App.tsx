@@ -13,6 +13,7 @@ import BoneAgeDataProvider from "./components/BoneAge";
 import Cataract from "./components/Cataract";
 import DiabeticRetinopathy from "./components/DiabeticRetinopathy";
 import SubmissionPage from "./components/SubmissionPage";
+import Leaderboard from "./components/Leaderboard";
 import DatasetUploadPage from "./components/DatasetUploadPage";
 import SubmissionGuidelinesPage from "./components/SubmissionGuidelinesPage";
 import ScrollToTop from "./components/ScrollToTop";
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="/bone-age" element={<BoneAgeDataProvider />} />
         <Route path="/cataract" element={<Cataract />} />
         <Route path="/diabetic-retinopathy" element={<DiabeticRetinopathy />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/submission" element={<SubmissionPage />} />
         <Route path="/dataset-upload" element={<DatasetUploadPage />} />
         <Route

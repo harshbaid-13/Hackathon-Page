@@ -249,7 +249,7 @@ const DiabeticRetinopathy = () => {
           <StatCard
             icon={<SearchCode className="text-red-600" />}
             label="Current Benchmark"
-            value="Not revealed"
+            value="0.88 F1 Score"
           />
           <StatCard
             icon={<FileImage className="text-blue-600" />}

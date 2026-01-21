@@ -1,13 +1,30 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Button } from "./ui/button";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, Trophy, ArrowRight } from "lucide-react";
 import { FAQDialog } from "./FAQDialog";
 import { useNavigate } from "react-router-dom";
 
 export function HeroSection() {
   const navigate = useNavigate();
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Leaderboard Banner */}
+      <div className="relative z-20 bg-linear-to-r from-amber-500 via-amber-400 to-yellow-500 text-amber-950">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center gap-3 flex-wrap">
+          <Trophy className="w-5 h-5 animate-pulse" />
+          <span className="font-semibold">Leaderboard is LIVE!</span>
+          <span className="hidden sm:inline text-amber-800">Check out the rankings and see where you stand.</span>
+          <button
+            onClick={() => navigate("/leaderboard")}
+            className="inline-flex items-center gap-1 bg-amber-950 text-amber-100 px-4 py-1.5 rounded-full text-sm font-medium hover:bg-amber-900 transition-colors cursor-pointer"
+          >
+            View Rankings
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
+      <div className="relative flex-1 flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
@@ -86,6 +103,7 @@ export function HeroSection() {
           </div>
         </div>
       </div> */}
+      </div>
     </div>
   );
 }

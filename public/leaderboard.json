@@ -1,0 +1,164 @@
+[
+    {
+        "team_name": "HealthyME",
+        "problem_type": "DR",
+        "commit": "Firstmodeltestv1",
+        "metric_value": 0.3663005376358809
+    },
+    {
+        "team_name": "HealthyME",
+        "problem_type": "DR",
+        "commit": "Firstmodeltestv1",
+        "metric_value": 0.3663005376358809
+    },
+    {
+        "team_name": "HealthyME",
+        "problem_type": "DR",
+        "commit": "VTWO",
+        "metric_value": 0.3663005376358809
+    },
+    {
+        "team_name": "DevTitans",
+        "problem_type": "BAP",
+        "commit": "Firstsubmissionforboneageprediction",
+        "metric_value": 107.36652465511892
+    },
+    {
+        "team_name": "FederatedNexus",
+        "problem_type": "BAP",
+        "commit": "boneagepredictionmodelMAE69months",
+        "metric_value": 0.9611141633651724
+    },
+    {
+        "team_name": "FedLearner",
+        "problem_type": "BAP",
+        "commit": "Firsrt",
+        "metric_value": 0.7610070627242178
+    },
+    {
+        "team_name": "MedicalFusion",
+        "problem_type": "BAP",
+        "commit": "Local-Global-Adaptive-Fusion",
+        "metric_value": 1.4164726454283443
+    },
+    {
+        "team_name": "MedCloudAI",
+        "problem_type": "BAP",
+        "commit": "MAE",
+        "metric_value": 3.3740039512154146
+    },
+    {
+        "team_name": "MedCloudAI",
+        "problem_type": "BAP",
+        "commit": "Pytorch-ResNet50",
+        "metric_value": 1.3144301818319432
+    },
+    {
+        "team_name": "OptiVision",
+        "problem_type": "DR",
+        "commit": "ResNeXt50_v1",
+        "metric_value": 0.42871024512530165
+    },
+    {
+        "team_name": "NeuroSight",
+        "problem_type": "DR",
+        "commit": "ConvMixer-Augmented",
+        "metric_value": 0.5115598813474419
+    },
+    {
+        "team_name": "VisionPulse",
+        "problem_type": "DR",
+        "commit": "EfficientNetV2S-Tuned",
+        "metric_value": 0.5654431192073482
+    },
+    {
+        "team_name": "BoneMinds",
+        "problem_type": "BAP",
+        "commit": "DenseResNet34",
+        "metric_value": 1.1198724365272807
+    },
+    {
+        "team_name": "FractureAI",
+        "problem_type": "BAP",
+        "commit": "XResNet50-Finetune",
+        "metric_value": 0.9587342124816895
+    },
+    {
+        "team_name": "MedOptics",
+        "problem_type": "BAP",
+        "commit": "MobileNetV3-Regressor",
+        "metric_value": 1.7845510937454987
+    },
+    {
+        "team_name": "RetinaFusion",
+        "problem_type": "DR",
+        "commit": "SwinTransformer_v3",
+        "metric_value": 0.29877254880948643
+    },
+    {
+        "team_name": "OsteoPredict",
+        "problem_type": "BAP",
+        "commit": "ViT-BoneModel",
+        "metric_value": 0.8723445617349629
+    },
+    {
+        "team_name": "EyeAIResearch",
+        "problem_type": "DR",
+        "commit": "HybridCNN-Attention",
+        "metric_value": 0.42911822730003255
+    },
+    {
+        "team_name": "XRayGenius",
+        "problem_type": "BAP",
+        "commit": "RegNetY-1.6GF",
+        "metric_value": 1.2327745517104757
+    },
+    {
+        "team_name": "CardioDetect",
+        "problem_type": "CD",
+        "commit": "ResNet18-Cardio",
+        "metric_value": 0.8234842987055774
+    },
+    {
+        "team_name": "PulseAI",
+        "problem_type": "CD",
+        "commit": "DenseNet121-Classifier",
+        "metric_value": 0.6121356045651185
+    },
+    {
+        "team_name": "HeartVision",
+        "problem_type": "CD",
+        "commit": "EfficientNetB0-CD",
+        "metric_value": 0.5995077218304455
+    },
+    {
+        "team_name": "VesselAI",
+        "problem_type": "CD",
+        "commit": "MobileNetV2-CD",
+        "metric_value": 0.6842105263157895
+    },
+    {
+        "team_name": "CardioFusion",
+        "problem_type": "CD",
+        "commit": "ViT-CD-Tuned",
+        "metric_value": 0.5417152252252252
+    },
+    {
+        "team_name": "HeartScope",
+        "problem_type": "CD",
+        "commit": "ConvMixer-CD",
+        "metric_value": 0.3689219330855019
+    },
+    {
+        "team_name": "ArteryAI",
+        "problem_type": "CD",
+        "commit": "SwinTransformer-CD",
+        "metric_value": 0.6305389221556886
+    },
+    {
+        "team_name": "VeinInsight",
+        "problem_type": "CD",
+        "commit": "RegNet-CD",
+        "metric_value": 0.799921568627451
+    }
+]
