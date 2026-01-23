@@ -60,10 +60,17 @@ export function SubmissionSection() {
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">
                   Want to contribute a dataset?
                 </h3>
-                <p className="text-slate-600">
+                <p className="text-slate-600 mb-3">
                   Help improve AI models by contributing your dataset. Upload a
                   CSV file with your data samples.
                 </p>
+                <Link
+                  to="/uploaded-datasets"
+                  className="inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-700 font-medium transition-colors bg-indigo-50 hover:bg-indigo-100 px-3 py-1.5 rounded-lg"
+                >
+                  <Database className="w-4 h-4" />
+                  View Uploaded Datasets
+                </Link>
               </div>
               <div className="shrink-0">
                 <Button

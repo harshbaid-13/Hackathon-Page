@@ -16,6 +16,7 @@ import SubmissionPage from "./components/SubmissionPage";
 import Leaderboard from "./components/Leaderboard";
 import DatasetUploadPage from "./components/DatasetUploadPage";
 import SubmissionGuidelinesPage from "./components/SubmissionGuidelinesPage";
+import UploadedDatasetsPage from "./components/UploadedDatasetsPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 function HomePage() {
@@ -51,6 +52,7 @@ export default function App() {
           path="/submission-guidelines"
           element={<SubmissionGuidelinesPage />}
         />
+        <Route path="/uploaded-datasets" element={<UploadedDatasetsPage />} />
       </Routes>
     </>
   );
