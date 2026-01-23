@@ -8,12 +8,6 @@
     {
         "team_name": "HealthyME",
         "problem_type": "DR",
-        "commit": "Firstmodeltestv1",
-        "metric_value": 0.3663005376358809
-    },
-    {
-        "team_name": "HealthyME",
-        "problem_type": "DR",
         "commit": "VTWO",
         "metric_value": 0.3663005376358809
     },
@@ -28,6 +22,72 @@
         "problem_type": "BAP",
         "commit": "boneagepredictionmodelMAE69months",
         "metric_value": 0.9611141633651724
+    },
+    {
+        "team_name": "TANUHFOUNDATION",
+        "problem_type": "DR",
+        "commit": "FinalplugandplayinferenceinterfaceanddocumentationforDRclassificationsubmission",
+        "metric_value": 0.06124178416533257
+    },
+    {
+        "team_name": "TANUHFOUNDATION",
+        "problem_type": "DR",
+        "commit": "FinalplugandplayinferenceinterfaceanddocumentationforDRclassificationsubmission3",
+        "metric_value": 0.008539894995704043
+    },
+    {
+        "team_name": "TANUHFOUNDATION",
+        "problem_type": "DR",
+        "commit": "TANUHModel3",
+        "metric_value": 0.06056880214234216
+    },
+    {
+        "team_name": "Bankai",
+        "problem_type": "DR",
+        "commit": "First commit",
+        "metric_value": 0.7538445586459507
+    },
+    {
+        "team_name": "CareCoders",
+        "problem_type": "CD",
+        "commit": "SwinBasetransformer",
+        "metric_value": 0.738461538461538
+    },
+    {
+        "team_name": "Sushruta",
+        "problem_type": "BAP",
+        "commit": "b",
+        "metric_value": 0.705176188637101
+    },
+    {
+        "team_name": "FederatedNexus",
+        "problem_type": "BAP",
+        "commit": "Boneagemodelsecondcommit",
+        "metric_value": 0.657175257264092
+    },
+    {
+        "team_name": "Bioraptors",
+        "problem_type": "BAP",
+        "commit": "DenseNet",
+        "metric_value": 4.8311853535023
+    },
+    {
+        "team_name": "DevTitans",
+        "problem_type": "BAP",
+        "commit": "Secondsubmissionforboneage",
+        "metric_value": 120.061025002403
+    },
+    {
+        "team_name": "DevTitans",
+        "problem_type": "BAP",
+        "commit": "Thirdsubmissionforboneage",
+        "metric_value": 120.061025002403
+    },
+    {
+        "team_name": "Metropolis",
+        "problem_type": "BAP",
+        "commit": "AddPyTorchbasedCNNmodelforpediatricboneageprediction",
+        "metric_value": 2.30483364780443
     },
     {
         "team_name": "FedLearner",
