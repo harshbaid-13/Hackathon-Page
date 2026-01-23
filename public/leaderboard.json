@@ -84,34 +84,100 @@
         "metric_value": 120.061025002403
     },
     {
+        "team_name": "DevTitans",
+        "problem_type": "DR",
+        "commit": "EfficientModelwithfirstsubmissionforthistrackwithagoodmodel",
+        "metric_value": 0.6198001431
+    },
+    {
         "team_name": "Metropolis",
         "problem_type": "BAP",
         "commit": "AddPyTorchbasedCNNmodelforpediatricboneageprediction",
         "metric_value": 2.30483364780443
     },
     {
-        "team_name": "FedLearner",
-        "problem_type": "BAP",
-        "commit": "Firsrt",
-        "metric_value": 0.7610070627242178
+        "team_name": "TANUHFOUNDATION",
+        "problem_type": "DR",
+        "commit": "TanuhNHA",
+        "metric_value": 0.6827809868444158
     },
     {
-        "team_name": "MedicalFusion",
+        "team_name": "TANUHFOUNDATION",
+        "problem_type": "DR",
+        "commit": "TanuhEMB",
+        "metric_value": 0.6750650318817939
+    },
+    {
+        "team_name": "TANUHFOUNDATION",
+        "problem_type": "DR",
+        "commit": "TanuhMcD",
+        "metric_value": 0.5715281196515604
+    },
+    {
+        "team_name": "Swasth",
         "problem_type": "BAP",
-        "commit": "Local-Global-Adaptive-Fusion",
-        "metric_value": 1.4164726454283443
+        "commit": "bafinal",
+        "metric_value": 1.4993461014338558
+    },
+    {
+        "team_name": "DristiPunj",
+        "problem_type": "CD",
+        "commit": "updatedOutputAgain",
+        "metric_value": 0.68601991046813
+    },
+    {
+        "team_name": "RoshanRateria",
+        "problem_type": "BAP",
+        "commit": "Tensorflow_Final",
+        "metric_value": 112.74285526554
+    },
+    {
+        "team_name": "Bioraptors",
+        "problem_type": "BAP",
+        "commit": "DenseNet",
+        "metric_value": 1.45380156458652
+    },
+    {
+        "team_name": "Yuvraj",
+        "problem_type": "BAP",
+        "commit": "NA",
+        "metric_value": 2.87007929450126
+    },
+    {
+        "team_name": "DevTitans",
+        "problem_type": "BAP",
+        "commit": "Finedtunedmodelofboneagepredictionand4thsubmission",
+        "metric_value": 111.64655063614168
+    },
+    {
+        "team_name": "Sushruta",
+        "problem_type": "BAP",
+        "commit": "BoneAgePredSUBAP2",
+        "metric_value": 0.705176188637101
+    },
+    {
+        "team_name": "Sushruta",
+        "problem_type": "DR",
+        "commit": "drivetoformCommit1ConvnextEns",
+        "metric_value": 0.3203125
+    },
+    {
+        "team_name": "Swasth",
+        "problem_type": "BAP",
+        "commit": "bainferencepandas",
+        "metric_value": 1.499346101
+    },
+    {
+        "team_name": "CareCoders",
+        "problem_type": "DR",
+        "commit": "SwinBaseTransformer",
+        "metric_value": 0.297560058
     },
     {
         "team_name": "MedCloudAI",
         "problem_type": "BAP",
         "commit": "MAE",
         "metric_value": 3.3740039512154146
-    },
-    {
-        "team_name": "MedCloudAI",
-        "problem_type": "BAP",
-        "commit": "Pytorch-ResNet50",
-        "metric_value": 1.3144301818319432
     },
     {
         "team_name": "OptiVision",
@@ -132,18 +198,6 @@
         "metric_value": 0.5654431192073482
     },
     {
-        "team_name": "BoneMinds",
-        "problem_type": "BAP",
-        "commit": "DenseResNet34",
-        "metric_value": 1.1198724365272807
-    },
-    {
-        "team_name": "FractureAI",
-        "problem_type": "BAP",
-        "commit": "XResNet50-Finetune",
-        "metric_value": 0.9587342124816895
-    },
-    {
         "team_name": "MedOptics",
         "problem_type": "BAP",
         "commit": "MobileNetV3-Regressor",
@@ -156,28 +210,10 @@
         "metric_value": 0.29877254880948643
     },
     {
-        "team_name": "OsteoPredict",
-        "problem_type": "BAP",
-        "commit": "ViT-BoneModel",
-        "metric_value": 0.8723445617349629
-    },
-    {
         "team_name": "EyeAIResearch",
         "problem_type": "DR",
         "commit": "HybridCNN-Attention",
         "metric_value": 0.42911822730003255
-    },
-    {
-        "team_name": "XRayGenius",
-        "problem_type": "BAP",
-        "commit": "RegNetY-1.6GF",
-        "metric_value": 1.2327745517104757
-    },
-    {
-        "team_name": "CardioDetect",
-        "problem_type": "CD",
-        "commit": "ResNet18-Cardio",
-        "metric_value": 0.8234842987055774
     },
     {
         "team_name": "PulseAI",
@@ -214,11 +250,5 @@
         "problem_type": "CD",
         "commit": "SwinTransformer-CD",
         "metric_value": 0.6305389221556886
-    },
-    {
-        "team_name": "VeinInsight",
-        "problem_type": "CD",
-        "commit": "RegNet-CD",
-        "metric_value": 0.799921568627451
     }
 ]
