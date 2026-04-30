@@ -42,9 +42,9 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/bone-age" element={<BoneAgeDataProvider />} />
+        {/* <Route path="/bone-age" element={<BoneAgeDataProvider />} />
         <Route path="/cataract" element={<Cataract />} />
-        <Route path="/diabetic-retinopathy" element={<DiabeticRetinopathy />} />
+        <Route path="/diabetic-retinopathy" element={<DiabeticRetinopathy />} /> */}
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/submission" element={<SubmissionPage />} />
         <Route path="/dataset-upload" element={<DatasetUploadPage />} />

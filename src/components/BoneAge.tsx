@@ -93,7 +93,7 @@ const BoneAgeDataProvider = () => {
         setIsLoading(true);
         setLoadError(null);
 
-        // Use import.meta.env.BASE_URL to handle the configured base path (/dhs/hackathon/)
+        // Use import.meta.env.BASE_URL to handle the configured base path (/dhs/bodh/)
         const baseUrl = import.meta.env.BASE_URL;
         const fileUrl = `${baseUrl}datasets/boneage-dataset.parquet`.replace(/\/+/g, "/"); // Normalize slashes
         
@@ -187,7 +187,7 @@ const BoneAgeDataProvider = () => {
             </div>
             <div className="flex gap-3">
               <a
-                href="/dhs/hackathon/datasets/boneage-training-dataset.parquet"
+                href="/dhs/bodh/datasets/boneage-training-dataset.parquet"
                 download="boneage-training-dataset.parquet"
                 className="inline-flex items-center px-4 py-2 border border-slate-300 shadow-sm text-sm font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 focus:outline-none transition-colors"
               >
@@ -195,7 +195,7 @@ const BoneAgeDataProvider = () => {
                 Download Training Dataset
               </a>
               <a
-                href="/dhs/hackathon/datasets/boneage-dataset.parquet"
+                href="/dhs/bodh/datasets/boneage-dataset.parquet"
                 download="boneage-dataset.parquet"
                 className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
               >

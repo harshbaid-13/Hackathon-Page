@@ -2,7 +2,7 @@ import { AlertTriangle } from "lucide-react";
 
 export function TrilemmaSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-linear-to-b from-white to-gray-50  ">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 rounded-full mb-4">
@@ -20,7 +20,7 @@ export function TrilemmaSection() {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Triangle Container - Hidden on mobile, shown on md+ */}
-          <div className="hidden md:block relative aspect-[16/7] max-w-3xl mx-auto mb-20 mt-12">
+          <div className="hidden md:block relative aspect-16/7 max-w-3xl mx-auto mb-20 mt-12">
             {/* Connecting Lines */}
             <svg
               className="absolute inset-x-4 top-0 bottom-0 w-[calc(100%-2rem)] h-full"

@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Leaderboard Banner */}
-      <div className="relative z-20 bg-linear-to-r from-amber-500 via-amber-400 to-yellow-500 text-amber-950">
+      {/* <div className="relative z-20 bg-linear-to-r from-amber-500 via-amber-400 to-yellow-500 text-amber-950">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center gap-3 flex-wrap">
           <Trophy className="w-5 h-5 animate-pulse" />
           <span className="font-semibold">Leaderboard is LIVE!</span>
@@ -22,80 +22,90 @@ export function HeroSection() {
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
-      </div>
+      </div> */}
 
       <div className="relative flex-1 flex items-center justify-center">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <ImageWithFallback
-          src="https://images.unsplash.com/photo-1758202292826-c40e172eed1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVjaG5vbG9neSUyMEFJJTIwaGVhbHRoY2FyZXxlbnwxfHx8fDE3NjM2MTAwMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-          alt="Medical AI Technology"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-linear-to-br from-blue-900/90 via-blue-800/85 to-cyan-900/90"></div>
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 text-center text-white">
-        <div className="max-w-2xl inline-block px-4 py-2 bg-white backdrop-blur-sm rounded-full border border-cyan-400/30 mb-8">
-          <p className="text-cyan-200">
-            <img
-              src="/dhs/hackathon/NHA-IITK-ICMR-Hackathon.png"
-              alt="NHA-IITK-ICMR-Hackathon"
-              className="w-full h-full object-cover"
-            />
-          </p>
-        </div>
-
-        <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 max-w-4xl mx-auto leading-tight">
-          Federated Intelligence Hackathon
-        </h1>
-
-        <p className="text-xl md:text-2xl text-cyan-100 mb-4 max-w-3xl mx-auto">
-          Trustworthy AI for Health
-        </p>
-
-        <p className="text-lg text-blue-200 mb-12 max-w-2xl mx-auto">
-          Building the future of healthcare AI through open benchmarking,
-          privacy-preserving validation, and collaborative innovation
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <div className="flex items-center gap-2 text-cyan-100">
-            <Calendar className="w-5 h-5" />
-            <span>19th - 23rd January, 2026</span>
-          </div>
-          <div className="hidden sm:block w-1 h-1 rounded-full bg-cyan-400"></div>
-          <div className="flex items-center gap-2 text-cyan-100">
-            <MapPin className="w-5 h-5" />
-            <span>IIT Kanpur / Online (Hybrid)</span>
-          </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button
-            size="lg"
-            className="cursor-pointer bg-gray-100 hover:bg-white text-blue-900 hover:text-blue-90 px-6 py-6 text-lg"
-            onClick={() => navigate("#about")}
-          >
-            Learn More
-          </Button>
-          <Button
-            size="lg"
-            className="cursor-pointer bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-6 text-lg"
-            onClick={() => navigate("#submission-section")}
-          >
-            Make Submissions
-          </Button>
-          <FAQDialog
-            className="cursor-pointer bg-gray-100 hover:bg-white text-blue-900 hover:text-blue-900 px-6 py-6 text-lg"
-            noSymbol={true}
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <ImageWithFallback
+            src="https://images.unsplash.com/photo-1758202292826-c40e172eed1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVjaG5vbG9neSUyMEFJJTIwaGVhbHRoY2FyZXxlbnwxfHx8fDE3NjM2MTAwMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Medical AI Technology"
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0B1220]/85 via-[#0B1220]/75 to-[#1e3a8a]/85"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
-      </div>
 
-      {/* Scroll Indicator */}
-      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+        {/* Content */}
+        <div className="relative z-10 max-w-5xl mx-auto px-6 py-28 md:py-32 text-center text-white -mt-12">
+          <div className="max-w-2xl inline-block px-6 py-3 bg-white/80 backdrop-blur-md rounded-full border border-white/90 shadow-lg">
+            <p className="text-cyan-200">
+              <img
+                src="/dhs/bodh/NHA-IITK-ICMR-Hackathon.png"
+                alt="NHA-IITK-ICMR-Hackathon"
+                className="w-full h-full object-cover"
+              />
+            </p>
+          </div>
+
+          <div className="max-w-132 mx-auto w-full mt-8">
+            <h1 className="flex justify-center">
+              <img
+                src={`${import.meta.env.BASE_URL}logo.png`}
+                alt="BODH.AI"
+                className="w-full h-auto drop-shadow-2xl object-contain"
+              />
+            </h1>
+            <p className="text-sm md:text-lg text-cyan-100 mb-8 text-center w-full">
+              Benchmarking Open Data Platform for Healthcare
+              AI</p>
+          </div>
+
+          <p className="text-2xl md:text-3xl font-semibold text-white mb-4 max-w-3xl mx-auto">
+            Trustworthy AI for <span className="text-cyan-300">Health</span>
+          </p>
+
+          <p className="text-lg text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Building the future of healthcare AI through open benchmarking,
+            privacy-preserving validation, and collaborative innovation
+          </p>
+
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <div className="flex items-center gap-2 text-cyan-100">
+              <Calendar className="w-5 h-5" />
+              <span>19th - 23rd January, 2026</span>
+            </div>
+            <div className="hidden sm:block w-1 h-1 rounded-full bg-cyan-400"></div>
+            <div className="flex items-center gap-2 text-cyan-100">
+              <MapPin className="w-5 h-5" />
+              <span>IIT Kanpur / Online (Hybrid)</span>
+            </div>
+          </div> */}
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              size="lg"
+              className="cursor-pointer bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-xl transition-all duration-300 hover:scale-105"
+              onClick={() => navigate("#about")}
+            >
+              Learn More
+            </Button>
+            {/* <Button
+              size="lg"
+              className="cursor-pointer bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-6 text-lg"
+              onClick={() => navigate("#submission-section")}
+            >
+              Make Submissions
+            </Button>
+            <FAQDialog
+              className="cursor-pointer bg-gray-100 hover:bg-white text-blue-900 hover:text-blue-900 px-6 py-6 text-lg"
+              noSymbol={true}
+            /> */}
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="flex flex-col items-center gap-2 text-white/60">
           <span className="text-sm">Scroll to explore</span>
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">

@@ -88,7 +88,7 @@ export function WebinarSection() {
               asChild
             >
               <a
-                href="/dhs/hackathon/presentation.pdf"
+                href="/dhs/bodh/presentation.pdf"
                 download="presentation.pdf"
               >
                 <FileDown className="w-4 h-4" />
